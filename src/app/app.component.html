@@ -1,0 +1,80 @@
+
+
+<section id="page">
+  <mat-card class="example-card c">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>GAME</mat-card-title>
+      <mat-card-subtitle>Rock / Paper / Scissors</mat-card-subtitle>
+    </mat-card-header>
+    <imgage mat-card-image src="assets/images/2202_w023_n001_1895b_p1_1895.jpg" alt="image loading">
+
+  <nav>
+  
+    <header>
+      <mat-toolbar>
+        <span>Rock / Paper / Scissors</span>
+        <span fxFlex></span>
+        <span>Player {{ results.player }} / Computer {{ results.computer }}</span>
+      </mat-toolbar>
+    </header>
+  
+</nav>
+
+
+  <main>
+    
+
+    <div fxLayout="row" fxFlexAlign="space-between" fxLayoutGap="50px">
+    <mat-card>
+      <mat-card-header>
+      <div mat-card-avatar ><mat-icon mat-card-avatar>public</mat-icon></div>
+      <mat-card-title>ROCK</mat-card-title>
+      <mat-card-subtitle>rock</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-actions>
+      <button mat-button (click)="play('rock')">PLAY</button>
+      </mat-card-actions>
+    </mat-card>
+    <mat-card>
+      <mat-card-header>
+      <div mat-card-avatar ><mat-icon mat-card-avatar>note</mat-icon></div>
+      <mat-card-title>PAPER</mat-card-title>
+      <mat-card-subtitle>paper</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-actions>
+      <button mat-button (click)="play('paper')">PLAY</button>
+      </mat-card-actions>
+    </mat-card>
+    <mat-card>
+      <mat-card-header>
+      <div mat-card-avatar ><mat-icon mat-card-avatar>content_cut</mat-icon></div>
+      <mat-card-title>SCISSORS</mat-card-title>
+      <mat-card-subtitle>scissors</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-actions>
+      <button mat-button (click)="play('scissors')">PLAY</button>
+      </mat-card-actions>
+    </mat-card>
+
+    
+    </div></main>
+  <footer><mat-card>
+    <mat-card-header>
+    <mat-card-title>Results</mat-card-title>
+    <mat-card-subtitle>Computer picked {{ computerResult }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+    <h1>{{ result }}</h1>
+    </mat-card-content>
+  </mat-card></footer>
+
+  <mat-card class="example-card" >
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Rock / Paper / Scissors</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <img src="{{Displaycon}}" alt="" width=100%>
+      </mat-card-content>
+  </mat-card>

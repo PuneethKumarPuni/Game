@@ -1,0 +1,48 @@
+mat-card {
+    margin: 8px;
+}
+  /* }  #page {
+    display: grid;
+    width: 100%;
+    height: 200px;
+    grid-template:
+      [header-left] "head head" 30px [header-right]
+      [main-left] "nav  main" 1fr [main-right]
+      [footer-left] "nav  foot" 30px [footer-right]
+      / 120px 1fr;
+  } */
+  header {
+     background-color: lime; 
+    grid-area: head;
+    
+    
+  }
+  .c{
+    height: fit-content;
+  }
+  
+  nav {
+     background-color: lightblue; 
+    grid-area: nav;
+    
+  }
+  
+  main {
+     background-color: yellow; 
+    grid-area: main;
+  }
+  
+  footer {
+    background-color: red;
+    grid-area: foot;
+  }
+ 
+  
+  .example-header-image {
+    background-image: url('C:\Users\punee\springboot\rock-paper-scisers\src\assets\images\2202_w023_n001_1895b_p1_1895.jpg');
+    background-size: cover;
+  }
+  .example-card{
+    max-width: fit-content;
+    max-height: fit-content;
+  }
